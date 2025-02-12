@@ -1,4 +1,4 @@
-const apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=152";
+const apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=151";
 const parkingdiv = document.getElementById("pokedex");
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
