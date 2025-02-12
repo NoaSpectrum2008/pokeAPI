@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #ff0000;  /* Red background */
+    padding: 20px 0;
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Search Container */
+#search-container {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+#search-input {
+    width: 80%; /* Zorgt ervoor dat de zoekbalk een mooie breedte heeft */
+    max-width: 400px; /* Maximaal de zoekbalk kan breder worden */
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 2px solid #ff0000;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #ff4d4d; /* Verandert de randkleur als je in het zoekveld klikt */
+}
+
+/* Search Button */
+.search-btn {
+    height: 44px;
+    background-color: #ff0000;  /* Red button */
+    border: none;
+    padding: 8px 15px; /* Maak de knop iets kleiner */
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px; /* Ruimte boven de knop */
+}
+
+.search-btn:hover {
+    background-color: #ff4d4d;  /* Slightly lighter red on hover */
+}
+
+.search-btn:active {
+    transform: scale(0.98);  /* Animation when button is clicked */
+}
+
+/* Pokédex Container */
+#pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+/* Pokemon Card */
+.pokemon-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #ff0000;  /* Red border around each Pokémon card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 270px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hover Effects */
+.pokemon-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Pokemon Image */
+.pokemon-card img {
+    width: 250px;   /* Make images larger */
+    height: 250px;  /* Make images larger */
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid #ff0000; /* Red border around the image */
+    margin-bottom: 10px;
+}
+
+/* Pokemon Name */
+.pokemon-card h2 {
+    font-size: 1.5em;
+    color: #ff0000;  /* Red text for the Pokémon name */
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Pokemon Info */
+.pokemon-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Button for Cry */
+.pokemon-card button {
+    background-color: #ff0000;  /* Red button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pokemon-card button:hover {
+    background-color: #ff4d4d;  /* Slightly lighter red on hover */
+}
+
+/* Animation for Cry */
+.pokemon-card button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .pokemon-card {
+        width: 100%;
+        max-width: 220px;
+        margin: 10px auto;
+    }
+
+    #search-input {
+        width: 100%; /* Op kleinere schermen wordt de zoekbalk breder */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    .pokemon-card {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
