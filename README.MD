@@ -18,4 +18,4 @@
 ###### Feel free to contact me on *"picavetnoa@erasmusdepinte.be"*
 ## :pencil: Creator and Copyright
 * Creator:*@NoaSpectrum2008*.
-* Copyright: Ask permission to use my complete files, the api is PokéApi, a free opensource API you can use for yourself.
+* Copyright: None
